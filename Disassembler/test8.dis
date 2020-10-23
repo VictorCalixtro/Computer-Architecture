@@ -1,0 +1,33 @@
+CS 3339 MIPS Disassembler
+  400000: sll $zero, $zero, 0
+  400004: unimplemented
+  400008: unimplemented
+  40000c: sra $zero, $zero, 0
+  400010: unimplemented
+  400014: unimplemented
+  400018: unimplemented
+  40001c: unimplemented
+  400020: jr $zero
+  400024: unimplemented
+  400028: unimplemented
+  40002c: unimplemented
+  400030: unimplemented
+  400034: unimplemented
+  400038: unimplemented
+  40003c: unimplemented
+  400040: mfhi $zero
+  400044: unimplemented
+  400048: mflo $zero
+  40004c: unimplemented
+  400050: unimplemented
+  400054: unimplemented
+  400058: unimplemented
+  40005c: unimplemented
+  400060: mult $zero, $zero
+  400064: unimplemented
+  400068: div $zero, $zero
+  40006c: unimplemented
+  400070: unimplemented
+  400074: unimplemented
+  400078: unimplemented
+  40007c: unimplemented

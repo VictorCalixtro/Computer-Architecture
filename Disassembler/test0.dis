@@ -1,0 +1,90 @@
+CS 3339 MIPS Disassembler
+  400000: j 400114
+  400004: sw $ra, -4($sp)
+  400008: sw $fp, -8($sp)
+  40000c: addiu $fp, $sp, -8
+  400010: addiu $sp, $fp, -412
+  400014: addiu $k1, $zero, 1
+  400018: sw $k1, -4($fp)
+  40001c: lw $k1, -4($fp)
+  400020: addiu $k0, $zero, 100
+  400024: slt $k1, $k1, $k0
+  400028: beq $k1, $zero, 4000e4
+  40002c: lw $k1, 8($fp)
+  400030: lui $k0, 16838
+  400034: addiu $k0, $k0, 20077
+  400038: mult $k1, $k0
+  40003c: mflo $k1
+  400040: addiu $k1, $k1, 12345
+  400044: sw $k1, 8($fp)
+  400048: lw $k1, 8($fp)
+  40004c: addiu $k0, $zero, 0
+  400050: slt $k1, $k1, $k0
+  400054: beq $k1, $zero, 400068
+  400058: lw $k1, 8($fp)
+  40005c: lui $k0, -32768
+  400060: addu $k1, $k1, $k0
+  400064: sw $k1, 8($fp)
+  400068: lw $k1, 8($fp)
+  40006c: addiu $k0, $zero, 99
+  400070: div $k1, $k0
+  400074: mfhi $k1
+  400078: addiu $k1, $k1, 1
+  40007c: sw $k1, -8($fp)
+  400080: lw $k1, -4($fp)
+  400084: sll $k1, $k1, 2
+  400088: addu $k1, $k1, $fp
+  40008c: lw $k0, -412($k1)
+  400090: sll $k0, $k0, 3
+  400094: sw $k0, -12($fp)
+  400098: lw $k1, -4($fp)
+  40009c: sll $k1, $k1, 2
+  4000a0: addu $k1, $k1, $fp
+  4000a4: lw $k0, -8($fp)
+  4000a8: sll $k0, $k0, 2
+  4000ac: addu $k0, $k0, $fp
+  4000b0: lw $t9, -412($k0)
+  4000b4: andi $t9, $t9, 31
+  4000b8: sw $t9, -412($k1)
+  4000bc: lw $k1, -8($fp)
+  4000c0: sll $k1, $k1, 2
+  4000c4: addu $k1, $k1, $fp
+  4000c8: lw $k0, -12($fp)
+  4000cc: sra $k0, $k0, 2
+  4000d0: sw $k0, -412($k1)
+  4000d4: lw $k1, -4($fp)
+  4000d8: addiu $k1, $k1, 1
+  4000dc: sw $k1, -4($fp)
+  4000e0: beq $zero, $zero, 40001c
+  4000e4: lw $k1, 8($fp)
+  4000e8: andi $k1, $k1, 1
+  4000ec: addiu $k0, $zero, 0
+  4000f0: bne $k1, $k0, 400100
+  4000f4: lw $k1, 8($fp)
+  4000f8: trap 3600001
+  4000fc: trap 0
+  400100: addiu $sp, $fp, 8
+  400104: lw $ra, 4($fp)
+  400108: lw $fp, 0($fp)
+  40010c: addiu $sp, $sp, 4
+  400110: jr $ra
+  400114: sw $ra, -4($sp)
+  400118: sw $fp, -8($sp)
+  40011c: addiu $fp, $sp, -8
+  400120: addiu $sp, $fp, -4
+  400124: addiu $k1, $zero, 177
+  400128: sw $k1, -4($fp)
+  40012c: lw $k1, -4($fp)
+  400130: trap 3600001
+  400134: trap 0
+  400138: lw $k1, -4($fp)
+  40013c: addiu $k0, $zero, 177
+  400140: subu $k0, $k0, $k1
+  400144: addiu $k0, $k0, 177
+  400148: sw $k0, -4($sp)
+  40014c: addiu $sp, $sp, -4
+  400150: jal 400004
+  400154: addiu $sp, $fp, 8
+  400158: lw $ra, 4($fp)
+  40015c: lw $fp, 0($fp)
+  400160: trap a

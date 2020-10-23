@@ -1,0 +1,7 @@
+CS 3339 MIPS Disassembler
+  400000: sll $t1, $zero, 2
+  400004: unimplemented
+  400008: lw $t0, 0($t1)
+  40000c: bne $t0, $s5, 400018
+  400010: unimplemented
+  400014: j 400000
